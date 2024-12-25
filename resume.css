@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url(My_pic.jpg) no-repeat center;
+    background-size: cover;
+    color: #ededed;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* Main content */
+.resume {
+    padding: 20px;
+}
+.resume-section {
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+.resume-section h2 {
+    font-size: 28px;
+    color: #00abf0;
+    margin-bottom: 10px;
+}
+.inside{
+    display: flex;   
+}
+.content{
+    border: 2px solid #00abf0;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 5px;
+}
+.text{
+    padding: 0 10px;
+}
+
+
+/*Icon*/
+.home-icon{
+    display: flex;
+}
+.home-icon a{
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #00abf0;
+    font-size: 20px;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+.home-icon a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:#00abf0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.home-icon a:hover::before{
+    width: 100%;
+}
+.home-icon a:hover{
+    color: #081b29;
+}
+
+
+/*Close btn*/
+.close{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+}
+.close a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #00abf0;
+}
+
